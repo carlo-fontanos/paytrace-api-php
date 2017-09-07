@@ -62,7 +62,7 @@ class PayTrace_API {
 				'BADDRESS', 'BADDRESS2', 'BCITY', 'BSTATE', 'BZIP', 
 				'BCOUNTRY', 'SNAME', 'SADDRESS', 'SADDRESS2', 
 				'SCITY', 'SCOUNTY', 'SSTATE', 'SZIP', 'SCOUNTRY', 
-				'EMAIL', 'PHONE', 'FAX'
+				'EMAIL', 'PHONE', 'FAX', 'CSC'
 			);
 			
 			foreach( $others as $key => $value ){
@@ -82,7 +82,6 @@ class PayTrace_API {
 			'EXPMNTH' 		=> $expiry_month,
 			'EXPYR' 		=> $expiry_year,
 			'BNAME' 		=> $name_or_business_name,
-			'CSC' 			=> '999',
 			'TERMS' 		=> 'Y',
 		) );
 		
@@ -269,4 +268,4 @@ class PayTrace_API {
 $paytrace_api = new PayTrace_API;
 
 // echo '<pre>';
-// print_r( $paytrace_api->get_user( 11172 ) );
+// print_r( $paytrace_api->get_user( 150003 ) );
